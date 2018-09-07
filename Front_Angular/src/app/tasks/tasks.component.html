@@ -1,0 +1,8 @@
+<h2>My Tasks</h2>
+<div><button (click)="getTasks()">Show tasks</button></div>
+<ul class="tasks">    
+  <li *ngFor="let task of tasks">
+   <div> <span class="badge">{{task.Id}}</span> {{task.title}} {{task.createdWhen | date:"MM/dd/yy"}}</div>   
+  </li>
+</ul>
+
