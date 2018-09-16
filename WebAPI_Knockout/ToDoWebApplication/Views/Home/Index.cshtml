@@ -1,0 +1,11 @@
+﻿@{
+	Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<h2>My Tasks</h2>
+<div><button data-bind ="click: GetAllTasks">Show tasks</button></div>
+<ul class =" tasks" data-bind="foreach: tasks">    
+	<li >
+		<div> <span class="badge" data-bind="text: $data"></span> </div>   
+	</li>
+</ul>
+
